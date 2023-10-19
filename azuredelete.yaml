@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+
+  tasks:
+
+  - name: delete resource group
+
+    azure_rm_resourcegroup:
+
+      name: trainer2
+
+      state: absent
